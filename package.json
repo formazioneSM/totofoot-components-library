@@ -1,0 +1,42 @@
+{
+  "name": "totofoot-library",
+  "version": "0.0.6",
+  "description": "totofoot library",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rollup-build-lib": "rollup -c",
+    "publish-patch": "npm version patch -m \"aggiornato alla versione %s\" && npm publish",
+    "publish-minor": "npm version minor -m \"aggiornato alla versione %s\" && npm publish",
+    "publish-major": "npm version major -m \"aggiornato alla versione %s\" && npm publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@types/react": "^18.2.6",
+    "@types/styled-components": "^5.1.26",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.22.0",
+    "rollup-plugin-dts": "^5.3.0",
+    "styled-components": "^6.0.0-rc.1",
+    "tslib": "^2.5.1",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "rollup-plugin-peer-deps-external": "^2.2.4"
+  }
+}
